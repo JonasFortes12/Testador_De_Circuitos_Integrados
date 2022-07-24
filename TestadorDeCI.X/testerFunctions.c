@@ -4,21 +4,8 @@
  *
  * Created on 18 de Junho de 2022, 18:06
  */
-
 #include "testerFunctions.h"
 
-
-
-void verify_button(){
-    
-//    switch(){ 
-//        case 0:
-//            break;
-//        case 0:
-//            break;
-//    }
-//
-}
 
 
 void test_7408(){

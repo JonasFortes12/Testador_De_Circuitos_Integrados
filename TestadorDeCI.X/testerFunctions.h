@@ -11,10 +11,7 @@
 #define button_DOWN   PORTAbits.RA1 //Botao para baixo
 #define button_SELECT PORTAbits.RA2 //Botao Selecionar
 
-    
-
-
-void refreshOption(); //atualiza a opcao na tela
+ 
 
 void test_7408(); //rotina de teste do CI7408
 

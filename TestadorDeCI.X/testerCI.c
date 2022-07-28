@@ -34,10 +34,10 @@ void main(void) {
 
  TRISB = 0x00;//Entradas para comunicacao com o Display LCD
  PORTB = 0;
- TRISD = 0x00;//Definicao das saidas para entradas dos CIs
- TRISC = 0b11110000;//Definicao de entradas para a saidas do CIs
  ADCON1 = 0xFF; //Definir o PortA como portas digitais
- TRISA = 0b00000111;//Definicao das entradas para os botoessss
+ TRISA = 0b00000111;//Definicao das entradas para os botoes
+// in_out_config_1(); //Definicao das entradas/saidas
+ 
  index = 0; // indice comeca mostrando primeira opcao 
  
  inicializa_lcd();
@@ -51,7 +51,7 @@ void main(void) {
  while(1) {
    
      
-     if(button_SELECT) test_7408();
+     if(button_SELECT) test_7404();
      
      
      

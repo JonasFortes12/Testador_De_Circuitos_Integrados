@@ -75,7 +75,7 @@ void main(void) {
         --index;
         if(index == -1) index = 2;
         refreshOption();
-    }   
+    }
     __delay_ms(200); 
     
   }

@@ -16,7 +16,7 @@ void in_out_config_2();
 
 void test_7408(); //rotina de teste do CI7408
 void test_7404(); //rotina de teste do CI7404
-
+void test_7432(); //rotina de teste do CI7432
 
 
 

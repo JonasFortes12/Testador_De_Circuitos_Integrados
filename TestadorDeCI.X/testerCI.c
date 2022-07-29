@@ -44,6 +44,26 @@ void refreshOption(){
 
 }
 
+void selectRoutine(){
+
+    switch(index){
+        case 0:
+            test_7408();
+            break;
+        
+        case 1:
+            test_7404();
+            break;
+        
+        case 2:
+            test_7432(); 
+            break;
+        
+        default:
+            break;
+    }
+
+}
 
 void main(void) {
 
@@ -76,6 +96,9 @@ void main(void) {
         if(index == -1) index = 2;
         refreshOption();
     }
+    
+    if(button_SELECT) selectRoutine();
+    
     __delay_ms(200); 
     
   }

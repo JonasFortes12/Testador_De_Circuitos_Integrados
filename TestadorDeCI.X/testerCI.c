@@ -7,7 +7,7 @@
 #include "lcd.h"
 #include "testerFunctions.h"
 
-unsigned char index;//contem a selecao da opcao que sera mostrada - indice
+int index;//contem a selecao da opcao que sera mostrada - indice
 
 
 void putch(char data)// para escrever caracteres no lcd com printf()
@@ -16,15 +16,30 @@ void putch(char data)// para escrever caracteres no lcd com printf()
 }
 
 void refreshOption(){
-
+    limpa_lcd();
+    caracter_inicio(1,0);//define o ponto de inicio da frase na primeira linha
+    printf("Selecione:");
+    
     switch(index){
         case 0:
-            caracter_inicio(2,2);//define o ponto de inicio da frase na primeira linha
-            printf("CI-7408");
+            caracter_inicio(2,0);//define o ponto de inicio da frase na primeira linha
+            printf("> CI-7408");
+            break;
         
         case 1:
-            caracter_inicio(2,2);//define o ponto de inicio da frase na primeira linha
-            printf("CI-XXXX"); 
+            caracter_inicio(2,0);//define o ponto de inicio da frase na primeira linha
+            printf("> CI-7404");
+            break;
+        
+        case 2:
+            caracter_inicio(2,0);//define o ponto de inicio da frase na primeira linha
+            printf("> CI-7432"); 
+            break;
+        
+        default:
+            caracter_inicio(2,0);//define o ponto de inicio da frase na primeira linha
+            printf("CI-----");
+            break;
     }
 
 }
@@ -50,17 +65,18 @@ void main(void) {
 
  while(1) {
    
-     
-     if(button_SELECT) test_7404();
-     
-     
-     
-//    if(button_UP) ++index;
-//    if(button_DOWN) --index;
-//    if(index > 1) index = 0;
-//    if(index == 255) index = 1;
-//    __delay_ms(50);
-//    refreshOption();
-     
+    if(button_UP){  
+        ++index;
+        if(index > 2) index = 0;
+        refreshOption();
     }
+    
+    if(button_DOWN){
+        --index;
+        if(index == -1) index = 2;
+        refreshOption();
+    }   
+    __delay_ms(200); 
+    
+  }
 }

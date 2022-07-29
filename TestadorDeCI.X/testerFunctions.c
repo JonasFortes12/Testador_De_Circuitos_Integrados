@@ -14,18 +14,19 @@ int input2[4] = {0, 1, 0, 1};
 int errors = 0;//contador de falhas
 
 void in_out_config_1(){
+   /*Definição de entradas e saidas para os CIs 7408 e 7432*/
     TRISD = 0x00;//Definicao das saidas para entradas do CI
     TRISC = 0b11110000;//Definicao de entradas para a saidas do CI
 }
 
 void in_out_config_2(){
-    //Definicao das saidas e entradas Micro -> CI
+    /*Definição de entradas e saidas para o CI 7404*/
     TRISD = 0b01100110;
     TRISC = 0b10100000;
 }
 
 void test_7408(){
-    /*Definindo entradas/saidas para o CI 7404*/
+    /*Definindo entradas/saidas*/
     in_out_config_1();
     /*Combinacao de saida para o CI 7408*/
     int output[4] = {0, 0, 0, 1};
@@ -86,7 +87,7 @@ void test_7408(){
 }
 
 void test_7404(){
-    /*Definindo entradas/saidas para o CI 7404*/
+    /*Definindo entradas/saidas*/
     in_out_config_2();
     /*Combinacao de saida para o CI 7408*/
     int output[2] = {1, 0};

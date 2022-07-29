@@ -2,9 +2,6 @@ Entrada1
 Entrada2  
 ---->  saida
 
-** Estrutura de dados (lista encadeada) para guardar
-os conjuntos de entradas e saida das 4 possibilidades
-do teste.
 
 ** for iterando de 0 a 3 com numeros binário,
 definindo as entradas. Operação bit-a-bit para definir a

@@ -10,9 +10,9 @@ Este projeto nasceu da necessidade de testar, de forma eficiente, o funcionament
 
 #### CI´s testados (por equanto)
 <div style ="display: inline_block">
-    <img align="center" alt="img" src="https://badgen.net/badge/CI/7408/:color?color=blue "/>
-    <img align="center" alt="img" src="https://badgen.net/badge/CI/7432/:color?color=blue "/>
-    <img align="center" alt="img" src="https://badgen.net/badge/CI/7404/:color?color=blue "/> 
+    <img align="center" alt="img" src="https://badgen.net/badge/CI/7408/:color?color=blue"/>
+    <img align="center" alt="img" src="https://badgen.net/badge/CI/7432/:color?color=blue"/>
+    <img align="center" alt="img" src="https://badgen.net/badge/CI/7404/:color?color=blue"/> 
 </div>
 
 ### Protótipo simulado
